@@ -3,10 +3,10 @@ session_start();
 if(empty($_SESSION['idPlayer'])){
     header('location:connexion.php');
 }
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'games';
+$host = 'test';
+$user = 'test';
+$password = 'test';
+$dbname = 'test';
 try {
     $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
     $pdo = new PDO($dsn, $user, $password);
