@@ -3,24 +3,12 @@ session_start();
 if(empty($_SESSION['idPlayer'])){
     header('location:connexion.php');
 }
-// $conn=mysqli_connect('localhost','root','','games') or die(mysqli_error($conn));
-// if($conn){
-//     $reponse='';
-// if(isset($_POST['addComment'])){
-//     $comment=$_POST['comment'];
-//     $sql="INSERT INTO comments (idPlayer,comment) VALUES (".$_SESSION['idPlayer'].",'$comment')";
-//     $result=mysqli_query($conn,$sql);
-//     if($result>0){
-//         $reponse='<span> Comment added</span>';
-//     }else{
-//         $reponse='<span> No</span>';
-//     }
-// }
 
-$host='localhost';
-$user='root';
-$password='';
-$dbname='games';
+
+$host='test';
+$user='test';
+$password='test';
+$dbname='test';
 try{
    $dsn='mysql:host='.$host.';dbname='.$dbname;
     $pdo=new PDO($dsn,$user,$password); 
