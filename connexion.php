@@ -5,7 +5,7 @@ if(isset($_GET['logout'])){
     session_unset();
     header('location:connexion.php');
 }
-$conn=mysqli_connect('localhost','root','','games') or die(mysqli_error($conn));
+$conn=mysqli_connect('test','test','test','test') or die(mysqli_error($conn));
 if($conn){
     $reponse='';
 if(isset($_POST['submit'])){
